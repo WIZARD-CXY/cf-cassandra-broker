@@ -13,7 +13,7 @@ Bundler.require(:default, Rails.env)
 
 require File.expand_path('../../lib/settings', __FILE__)
 
-module CfMysqlBroker
+module CfCassandraBroker
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers

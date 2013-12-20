@@ -8,37 +8,36 @@ defaults: &defaults
   auth_username: cc
 
   services:
-  - name: p-mysql
-    id: 3101b971-1044-4816-a7ac-9ded2e028079
-    description: MySQL service for application development and testing
+  - name: cassandra-service
+    id: 3101b971-1045-4816-a7ac-9ded2e028076
+    description: cassandra service for application development and testing
     tags:
-      - mysql
-      - relational
-    max_db_per_node: 250
+      - cassandra
+      - NoSQL
+    max_db_per_node: 200
     metadata:
       provider:
-        name:
+        name: chenxingyu
       listing:
         imageUrl: ~
-        blurb: MySQL service for application development and testing
+        blurb: Cassandra service for application development and testing
     plans:
-    - name: 5mb
-      id: 2451fa22-df16-4c10-ba6e-1f682d3dcdc9
-      description: Shared MySQL Server, 5mb persistent disk, 40 max concurrent connections
+    - name: 10mb
+      id: 2451fa22-df16-4c10-ba6e-1f682d3dcdc8
+      description: cassnadra Server, 5mb persistent disk, 40 max concurrent connections
       max_storage_mb: 5 # in MB
       metadata:
         cost: 0.0
         bullets:
-        - content: Shared MySQL server
-        - content: 5 MB storage
+        - content: 10 MB storage
         - content: 40 concurrent connections
 
 
 
 development:
-  auth_password: 'secret'
+  auth_password: 'dev'
   <<: *defaults
 
 test:
-  auth_password: 'secret'
+  auth_password: 'test'
   <<: *defaults

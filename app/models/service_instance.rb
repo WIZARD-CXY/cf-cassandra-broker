@@ -1,4 +1,5 @@
-class ServiceInstance < BaseModel
+class ServiceInstance < ActiveRecord::Base
+  include ActiveCassandra::CF
   attr_accessor :id
 
   DATABASE_PREFIX = 'cf_'.freeze

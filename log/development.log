@@ -1,283 +1,103 @@
-  [1m[36m (102.7ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (241.7ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35m (49.1ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
-  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-  [1m[36m (185.3ms)[0m  [1mDROP DATABASE IF EXISTS `test`[0m
-  [1m[35m (0.3ms)[0m  CREATE DATABASE `test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
-  [1m[36m (94.0ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (225.2ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35m (40.9ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
-  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-  [1m[36m (0.6ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
-  [1m[36m (0.1ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
-  [1m[36m (40.1ms)[0m  [1mDROP DATABASE IF EXISTS `test`[0m
-  [1m[35m (0.3ms)[0m  CREATE DATABASE `test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
-  [1m[36m (111.5ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (216.9ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35m (49.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
-  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-  [1m[36m (0.2ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
-  [1m[36m (75.1ms)[0m  [1mDROP DATABASE IF EXISTS `test`[0m
-  [1m[35m (0.3ms)[0m  CREATE DATABASE `test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
-  [1m[36m (93.1ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (233.5ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35m (49.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
-  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-  [1m[36m (37.0ms)[0m  [1mDROP DATABASE IF EXISTS `test`[0m
-  [1m[35m (0.2ms)[0m  CREATE DATABASE `test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
-  [1m[36m (96.6ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (217.1ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35m (49.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
-  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
-  [1m[36m (179.0ms)[0m  [1mDROP DATABASE IF EXISTS `test`[0m
-  [1m[35m (0.3ms)[0m  CREATE DATABASE `test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
-  [1m[36m (412.8ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (618.2ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35m (40.9ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
-  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-  [1m[36m (176.4ms)[0m  [1mDROP DATABASE IF EXISTS `test`[0m
-  [1m[35m (0.3ms)[0m  CREATE DATABASE `test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
-  [1m[36m (231.9ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (359.5ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35m (41.0ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
-  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-  [1m[36m (93.4ms)[0m  [1mDROP DATABASE IF EXISTS `test`[0m
-  [1m[35m (0.3ms)[0m  CREATE DATABASE `test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
-  [1m[36m (277.8ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (367.8ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35m (41.0ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
-  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-  [1m[36m (402.6ms)[0m  [1mDROP DATABASE IF EXISTS `test`[0m
-  [1m[35m (33.4ms)[0m  CREATE DATABASE `test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
-  [1m[36m (309.0ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (395.4ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35m (57.6ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
-  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-  [1m[36m (150.1ms)[0m  [1mDROP DATABASE IF EXISTS `test`[0m
-  [1m[35m (0.3ms)[0m  CREATE DATABASE `test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
-  [1m[36m (188.3ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (335.7ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35m (41.1ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
-  [1m[36mActiveRecord::SchemaMigration Load (27.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
 
 
-Started GET "/" for 127.0.0.1 at 2013-12-16 14:44:06 +0800
-Processing by Rails::WelcomeController#index as HTML
-  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/railties-4.0.0/lib/rails/templates/rails/welcome/index.html.erb (42.7ms)
-Completed 200 OK in 73ms (Views: 73.1ms | ActiveRecord: 0.0ms)
-  [1m[36m (93.0ms)[0m  [1mDROP DATABASE IF EXISTS `test`[0m
-  [1m[35m (0.3ms)[0m  CREATE DATABASE `test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
-  [1m[36m (273.8ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (419.6ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35m (41.0ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
-  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-  [1m[36m (84.6ms)[0m  [1mDROP DATABASE IF EXISTS `test`[0m
-  [1m[35m (0.3ms)[0m  CREATE DATABASE `test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
-  [1m[36m (322.6ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (343.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35m (41.1ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
-  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-  [1m[36m (86.1ms)[0m  [1mDROP DATABASE IF EXISTS `test`[0m
-  [1m[35m (0.3ms)[0m  CREATE DATABASE `test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
-  [1m[36m (336.7ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (317.9ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35m (41.0ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
-  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-  [1m[36m (79.5ms)[0m  [1mDROP DATABASE IF EXISTS `test`[0m
-  [1m[35m (0.4ms)[0m  CREATE DATABASE `test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
-  [1m[36m (248.8ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (284.4ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35m (40.8ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
-  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-  [1m[36m (91.1ms)[0m  [1mDROP DATABASE IF EXISTS `test`[0m
-  [1m[35m (0.3ms)[0m  CREATE DATABASE `test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
-  [1m[36m (701.1ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (293.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35m (40.9ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
-  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-  [1m[36m (387.4ms)[0m  [1mDROP DATABASE IF EXISTS `test`[0m
-  [1m[35m (0.3ms)[0m  CREATE DATABASE `test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
-  [1m[36m (336.1ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (292.8ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35m (49.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
-  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-  [1m[36m (84.5ms)[0m  [1mDROP DATABASE IF EXISTS `test`[0m
-  [1m[35m (0.3ms)[0m  CREATE DATABASE `test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
-  [1m[36m (199.6ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (318.6ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35m (65.5ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
-  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-  [1m[36m (85.7ms)[0m  [1mDROP DATABASE IF EXISTS `test`[0m
-  [1m[35m (0.3ms)[0m  CREATE DATABASE `test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
-  [1m[36m (265.4ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (301.1ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35m (65.8ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
-  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-  [1m[36m (84.0ms)[0m  [1mDROP DATABASE IF EXISTS `test`[0m
-  [1m[35m (0.3ms)[0m  CREATE DATABASE `test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
-  [1m[36m (249.7ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (326.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35m (49.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
-  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-
-
-Started GET "/v2/catalog" for 10.10.102.224 at 2013-12-16 15:50:18 +0800
+Started GET "/v2/catalog" for 10.10.102.224 at 2013-12-20 16:09:24 +0800
 Processing by V2::CatalogsController#show as JSON
 Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/v2/catalog" for 10.10.102.224 at 2013-12-16 15:51:06 +0800
-Processing by V2::CatalogsController#show as JSON
-Filter chain halted as :authenticate rendered or redirected
-Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
-
-
-Started GET "/v2/catalog" for 10.10.102.224 at 2013-12-16 15:51:19 +0800
-Processing by V2::CatalogsController#show as JSON
-Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/v2/catalog" for 10.10.102.224 at 2013-12-16 16:06:26 +0800
-Processing by V2::CatalogsController#show as JSON
-Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/v2/catalog" for 10.10.102.224 at 2013-12-16 16:32:34 +0800
-Processing by V2::CatalogsController#show as JSON
-Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/v2/catalog" for 10.10.102.224 at 2013-12-16 16:33:52 +0800
-Processing by V2::CatalogsController#show as JSON
-Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/v2/catalog" for 10.10.102.224 at 2013-12-16 16:34:10 +0800
-Processing by V2::CatalogsController#show as JSON
-Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms)
-  [1m[36m (180.1ms)[0m  [1mDROP DATABASE IF EXISTS `test`[0m
-  [1m[35m (0.3ms)[0m  CREATE DATABASE `test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
-  [1m[36m (303.5ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (518.2ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35m (40.8ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
-  [1m[36mActiveRecord::SchemaMigration Load (21.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-  [1m[36m (128.0ms)[0m  [1mDROP DATABASE IF EXISTS `test`[0m
-  [1m[35m (0.3ms)[0m  CREATE DATABASE `test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
-  [1m[36m (398.7ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (359.8ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35m (99.6ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
-  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-  [1m[36m (96.8ms)[0m  [1mDROP DATABASE IF EXISTS `test`[0m
-  [1m[35m (0.3ms)[0m  CREATE DATABASE `test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
-  [1m[36m (323.1ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (342.5ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35m (49.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
-  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-  [1m[36m (87.8ms)[0m  [1mDROP DATABASE IF EXISTS `test`[0m
-  [1m[35m (0.3ms)[0m  CREATE DATABASE `test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
-  [1m[36m (248.0ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (328.1ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35m (86.1ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
-  [1m[36mActiveRecord::SchemaMigration Load (23.9ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-  [1m[36m (88.8ms)[0m  [1mDROP DATABASE IF EXISTS `test`[0m
-  [1m[35m (0.6ms)[0m  CREATE DATABASE `test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
-  [1m[36m (301.4ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (342.8ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35m (49.1ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
-  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-  [1m[36m (243.5ms)[0m  [1mDROP DATABASE IF EXISTS `test`[0m
-  [1m[35m (0.3ms)[0m  CREATE DATABASE `test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
-  [1m[36m (211.6ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (510.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35m (49.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
-  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-  [1m[36m (95.5ms)[0m  [1mDROP DATABASE IF EXISTS `test`[0m
-  [1m[35m (0.3ms)[0m  CREATE DATABASE `test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
-  [1m[36m (307.7ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (451.6ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35m (49.1ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
-  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-  [1m[36m (94.0ms)[0m  [1mDROP DATABASE IF EXISTS `test`[0m
-  [1m[35m (0.3ms)[0m  CREATE DATABASE `test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
-  [1m[36m (305.3ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (439.9ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36m (0.2ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35m (41.1ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
-  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-  [1m[36m (145.4ms)[0m  [1mDROP DATABASE IF EXISTS `test`[0m
-  [1m[35m (0.3ms)[0m  CREATE DATABASE `test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
-  [1m[36m (689.2ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (310.7ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35m (40.9ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
-  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-  [1m[36m (99.1ms)[0m  [1mDROP DATABASE IF EXISTS `test`[0m
-  [1m[35m (0.3ms)[0m  CREATE DATABASE `test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
-  [1m[36m (214.2ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (301.2ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35m (50.5ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
-  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-  [1m[36m (91.4ms)[0m  [1mDROP DATABASE IF EXISTS `test`[0m
-  [1m[35m (0.3ms)[0m  CREATE DATABASE `test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
-  [1m[36m (331.7ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (292.7ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35m (32.7ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
-  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-  [1m[36m (104.7ms)[0m  [1mDROP DATABASE IF EXISTS `test`[0m
-  [1m[35m (0.2ms)[0m  CREATE DATABASE `test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
-  [1m[36m (286.1ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (343.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
-  [1m[35m (40.9ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
-  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-
-
-Started PUT "/v2/service_instances/9e67fcc7-a167-4985-8ae0-ead9bfd0615f" for 10.10.102.224 at 2013-12-17 12:49:50 +0800
+Started PUT "/v2/service_instances/39d1e17b-7f97-4b3f-8925-81206b47f41b" for 10.10.102.224 at 2013-12-20 16:11:34 +0800
 Processing by V2::ServiceInstancesController#update as JSON
-  Parameters: {"service_id"=>"3101b971-1044-4816-a7ac-9ded2e028079", "plan_id"=>"2451fa22-df16-4c10-ba6e-1f682d3dcdc9", "organization_guid"=>"a3bf5487-d26d-44b8-84a8-87aef11acd9d", "space_guid"=>"7c191e91-40ba-4cce-ba6b-27c19939d6a4", "id"=>"9e67fcc7-a167-4985-8ae0-ead9bfd0615f"}
-  [1m[36m (22.7ms)[0m  [1mselect count(*) from information_schema.SCHEMATA where schema_name LIKE 'cf_%'[0m
-  [1m[35m (34.7ms)[0m  CREATE DATABASE `cf_9e67fcc7_a167_4985_8ae0_ead9bfd0615f`
-Completed 201 Created in 76ms (Views: 0.2ms | ActiveRecord: 57.4ms)
+  Parameters: {"service_id"=>"3101b971-1045-4816-a7ac-9ded2e028076", "plan_id"=>"2451fa22-df16-4c10-ba6e-1f682d3dcdc8", "organization_guid"=>"a3bf5487-d26d-44b8-84a8-87aef11acd9d", "space_guid"=>"7c191e91-40ba-4cce-ba6b-27c19939d6a4", "id"=>"39d1e17b-7f97-4b3f-8925-81206b47f41b"}
+  [1m[36m (0.1ms)[0m  [1mselect count(*) from information_schema.SCHEMATA where schema_name LIKE 'cf_%'[0m
+LocalJumpError: no block given (yield): select count(*) from information_schema.SCHEMATA where schema_name LIKE 'cf_%'
+Completed 500 Internal Server Error in 26ms
+
+ActiveRecord::StatementInvalid (LocalJumpError: no block given (yield): select count(*) from information_schema.SCHEMATA where schema_name LIKE 'cf_%'):
+  app/models/service_instance.rb:20:in `get_number_of_existing_instances'
+  app/controllers/v2/service_instances_controller.rb:5:in `update'
 
 
-Started PUT "/v2/service_instances/9e67fcc7-a167-4985-8ae0-ead9bfd0615f/service_bindings/bf3ce05f-2c9d-4c83-beae-fcd51932e0c5" for 10.10.102.224 at 2013-12-17 12:50:34 +0800
-Processing by V2::ServiceBindingsController#update as JSON
-  Parameters: {"plan_id"=>"2451fa22-df16-4c10-ba6e-1f682d3dcdc9", "service_id"=>"3101b971-1044-4816-a7ac-9ded2e028079", "service_instance_id"=>"9e67fcc7-a167-4985-8ae0-ead9bfd0615f", "id"=>"bf3ce05f-2c9d-4c83-beae-fcd51932e0c5"}
-  [1m[36m (0.5ms)[0m  [1mSHOW DATABASES LIKE 'cf_9e67fcc7_a167_4985_8ae0_ead9bfd0615f'[0m
-  [1m[35m (0.6ms)[0m  CREATE USER 'AkYuuDpYvLwk2gUh' IDENTIFIED BY 'xmOh0LrrKvTf9HJI'
-  [1m[36m (0.3ms)[0m  [1mGRANT ALL PRIVILEGES ON `cf_9e67fcc7_a167_4985_8ae0_ead9bfd0615f`.* TO 'AkYuuDpYvLwk2gUh'@'%'[0m
-  [1m[35m (0.3ms)[0m  FLUSH PRIVILEGES
-Completed 201 Created in 24ms (Views: 3.7ms | ActiveRecord: 1.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.1ms)
+
+
+Started PUT "/v2/service_instances/86b8b465-b36b-48e1-931e-c4762dc948dc" for 10.10.102.224 at 2013-12-20 16:27:49 +0800
+
+SyntaxError (/home/xingyuchen/cf-cassandra-broker/app/controllers/v2/service_instances_controller.rb:28: syntax error, unexpected keyword_end, expecting $end):
+  activesupport (4.0.0) lib/active_support/dependencies.rb:423:in `load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:423:in `block in load_file'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:615:in `new_constants_in'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:422:in `load_file'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:323:in `require_or_load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:462:in `load_missing_constant'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:183:in `const_missing'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:228:in `const_get'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:228:in `block in constantize'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:534:in `get'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:565:in `constantize'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1177843548479173323__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.7ms)
+
+
+Started PUT "/v2/service_instances/d6fa654b-aca4-449f-8ae8-8597db5aec62" for 10.10.102.224 at 2013-12-20 16:36:47 +0800
+Processing by V2::ServiceInstancesController#update as JSON
+  Parameters: {"service_id"=>"3101b971-1045-4816-a7ac-9ded2e028076", "plan_id"=>"2451fa22-df16-4c10-ba6e-1f682d3dcdc8", "organization_guid"=>"a3bf5487-d26d-44b8-84a8-87aef11acd9d", "space_guid"=>"7c191e91-40ba-4cce-ba6b-27c19939d6a4", "id"=>"d6fa654b-aca4-449f-8ae8-8597db5aec62"}
+Completed 500 Internal Server Error in 22ms
+
+NameError (undefined local variable or method `tables' for #<ActiveRecord::ConnectionAdapters::CassandraAdapter:0x007f3fac1238e0>):
+  app/controllers/v2/service_instances_controller.rb:8:in `update'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)

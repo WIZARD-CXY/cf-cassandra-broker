@@ -4,25 +4,24 @@
 # settings.
 
 development:
-  adapter: mysql2
-  encoding: utf8
-  database: development
-  pool: 5
-  username: root
+  keyspace: "development"
+  username: Wiz
   password: humanoid
-  host: localhost
-  port: 3306
+  servers: "10.10.102.24:9160"
+  disable_node_auto_discovery: true
+  thrift:
+    timeout: 3
+    retries: 2
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  adapter: mysql2
-  encoding: utf8
-  database: test
-  pool: 5
-  username: root
-  # These are required by the tests, even though they have default values
+  keyspace: "test"
+  disable_node_auto_discovery: true
+  username: Wiz
   password: humanoid
-  host: localhost
-  port: 3306
+  servers: "10.10.102.24:9160"
+  thrift:
+      timeout: 3
+      retries: 2
