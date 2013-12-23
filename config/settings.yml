@@ -3,14 +3,14 @@
 # file that contains these settings.
 
 defaults: &defaults
-  database_config_path: 'config/database.yml'
+  database_config_path: 'config/cassandra.yml'
   log_path: 'log/<%= Rails.env %>.log'
   auth_username: cc
 
   services:
   - name: cassandra-service
     id: 3101b971-1045-4816-a7ac-9ded2e028076
-    description: cassandra service for application development and testing
+    description: cassandra service for couldfoundry v2
     tags:
       - cassandra
       - NoSQL
@@ -20,19 +20,13 @@ defaults: &defaults
         name: chenxingyu
       listing:
         imageUrl: ~
-        blurb: Cassandra service for application development and testing
+        blurb: Cassandra service for cloudfoundry v2
     plans:
-    - name: 10mb
+    - name: free
       id: 2451fa22-df16-4c10-ba6e-1f682d3dcdc8
-      description: cassnadra Server, 5mb persistent disk, 40 max concurrent connections
-      max_storage_mb: 5 # in MB
+      description: Free Plan
       metadata:
         cost: 0.0
-        bullets:
-        - content: 10 MB storage
-        - content: 40 concurrent connections
-
-
 
 development:
   auth_password: 'dev'

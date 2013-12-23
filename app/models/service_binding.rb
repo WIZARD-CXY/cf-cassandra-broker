@@ -1,4 +1,4 @@
-class ServiceBinding < BaseModel
+class ServiceBinding
   attr_accessor :id, :service_instance
 
   # Returns a given binding, if the MySQL user exists.
@@ -10,16 +10,19 @@ class ServiceBinding < BaseModel
   # sure the binding exists. This problem is resolvable by persisting
   # both ids and their relationship in a separate management database.
 
-  def self.find_by_id(id)
-    binding = new(id: id)
+   #Not implement yet
+   #def self.find_by_id(id)
+   # binding = new(id: id)
 
-    begin
-      connection.execute("SHOW GRANTS FOR '#{binding.username}'")
-      binding
-    rescue ActiveRecord::StatementInvalid => e
-      raise unless e.message =~ /no such grant/
-    end
-  end
+    #begin
+   #   connection.execute("SHOW GRANTS FOR '#{binding.username}'")
+   #   binding
+   # rescue ActiveRecord::StatementInvalid => e
+   #   raise unless e.message =~ /no such grant/
+   # end
+   #end
+
+
 
   # Returns a given binding, if it exists.
   #
@@ -28,22 +31,23 @@ class ServiceBinding < BaseModel
   # the binding id and the instance id, it cannot currently be
   # used by the binding controller.
 
-  def self.find_by_id_and_service_instance_id(id, instance_id)
-    instance = ServiceInstance.new(id: instance_id)
-    binding = new(id: id)
+  #Not implemented yet
+  #def self.find_by_id_and_service_instance_id(id, instance_id)
+  #  instance = ServiceInstance.new(id: instance_id)
+  #  binding = new(id: id)
 
-    begin
-      grants = connection.select_values("SHOW GRANTS FOR '#{binding.username}'")
+  #  begin
+  #    grants = connection.select_values("SHOW GRANTS FOR '#{binding.username}'")
 
       # Can we do this more elegantly, i.e., without checking for a
       # particular raw GRANT statement?
-      if grants.include?("GRANT ALL PRIVILEGES ON `#{instance.database}`.* TO '#{binding.username}'@'%'")
-        binding
-      end
-    rescue ActiveRecord::StatementInvalid => e
-      raise unless e.message =~ /no such grant/
-    end
-  end
+  #    if grants.include?("GRANT ALL PRIVILEGES ON `#{instance.database}`.* TO '#{binding.username}'@'%'")
+  #      binding
+   #   end
+   # rescue ActiveRecord::StatementInvalid => e
+   #   raise unless e.message =~ /no such grant/
+  #  end
+  #end
 
   # Checks to see if the given binding exists.
   #
@@ -51,12 +55,13 @@ class ServiceBinding < BaseModel
   # verify true existence, and thus cannot currently be used by the
   # binding controller.
 
-  def self.exists?(conditions)
-    id = conditions.fetch(:id)
-    instance_id = conditions.fetch(:service_instance_id)
-
-    find_by_id_and_service_instance_id(id, instance_id).present?
-  end
+  # not implemented yet
+  #def self.exists?(conditions)
+  #  id = conditions.fetch(:id)
+  #  instance_id = conditions.fetch(:service_instance_id)
+  #
+  #  find_by_id_and_service_instance_id(id, instance_id).present?
+  #end
 
   def host
     connection_config.fetch('host')

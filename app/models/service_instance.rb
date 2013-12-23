@@ -1,45 +1,57 @@
-class ServiceInstance < ActiveRecord::Base
-  include ActiveCassandra::CF
-  attr_accessor :id
+require 'cql'
 
-  DATABASE_PREFIX = 'cf_'.freeze
+class ServiceInstance
+  attr_accessor :id , :client
+
+  Keyspace_PREFIX = 'cf_'.freeze
+
+  def initialize(id)
+    @id=id
+    host = Rails.configuration.database_configuration[Rails.env].fetch('host')
+    username = Rails.configuration.database_configuration[Rails.env].fetch('username')
+    password = Rails.configuration.database_configuration[Rails.env].fetch('password')
+
+    @client = Cql::Client.connect(hosts: [host], credentials:{"username"=>username,"password"=>password})
+  end
+
 
   def self.find_by_id(id)
-    instance = new(id: id)
-    instance if connection.select("SHOW DATABASES LIKE '#{instance.database}'").any?
+    new(id: id)
+  #  instance if instance.client.execute("SHOW DATABASES LIKE '#{instance.keyspaceName}'").any?
   end
+
 
   def self.find(id)
     find_by_id(id) || raise("Couldn't find ServiceInstance with id=#{id}")
   end
 
-  def self.exists?(id)
-    find_by_id(id).present?
-  end
+  #Not implement yet
+  #def self.exists?(id)
+  #  find_by_id(id).present?
+  #end
 
-  def self.get_number_of_existing_instances
-    connection.select("select count(*) from information_schema.SCHEMATA where schema_name LIKE 'cf_%'").rows.first.first
-  end
+  #Not implement yet
+  #def self.get_number_of_existing_instances
+  #  connection.select("select count(*) from information_schema.SCHEMATA where schema_name LIKE 'cf_%'").rows.first.first
+  #end
 
-  def database
-    @database ||= begin
-      # MySQL database names are limited to [0-9,a-z,A-Z$_] and 64 chars
+  def keyspaceName
       if id =~ /[^0-9,a-z,A-Z$-]+/
         raise 'Only ids matching [0-9,a-z,A-Z$-]+ are allowed'
       end
 
-      database = id.gsub('-', '_')
+      keyspace = id[:id].gsub('-', '_')
 
-      "#{DATABASE_PREFIX}#{database}"
-    end
+      "#{Keyspace_PREFIX}#{keyspace}"
   end
 
+  # now is hard coded replication strategy
   def save
-    connection.execute("CREATE DATABASE `#{database}`")
+    @client.execute("CREATE KEYSPACE #{keyspaceName} WITH replication = {'class': 'SimpleStrategy','replication_factor': 3}")
   end
 
   def destroy
-    connection.execute("DROP DATABASE IF EXISTS `#{database}`")
+    @client.execute("DROP KEYSPACE #{keyspaceName}")
   end
 
   def to_json(*)

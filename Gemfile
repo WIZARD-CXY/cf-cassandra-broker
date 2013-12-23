@@ -3,7 +3,7 @@ ruby '1.9.3'
 gem 'rails'
 gem 'rails-api'
 gem 'settingslogic'
-gem 'active_column'
+gem 'cql-rb'
 
 group :production do
   gem 'unicorn'
