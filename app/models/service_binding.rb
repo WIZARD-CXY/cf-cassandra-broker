@@ -10,9 +10,9 @@ class ServiceBinding
   # sure the binding exists. This problem is resolvable by persisting
   # both ids and their relationship in a separate management database.
 
-   #Not implement yet
-   #def self.find_by_id(id)
-   # binding = new(id: id)
+
+   def self.find_by_id(id, service_instance)
+    binding = new(id, service_instance)
 
     #begin
    #   connection.execute("SHOW GRANTS FOR '#{binding.username}'")
@@ -20,7 +20,7 @@ class ServiceBinding
    # rescue ActiveRecord::StatementInvalid => e
    #   raise unless e.message =~ /no such grant/
    # end
-   #end
+   end
 
 
 
@@ -62,6 +62,10 @@ class ServiceBinding
   #
   #  find_by_id_and_service_instance_id(id, instance_id).present?
   #end
+  def initialize(id,service_instance)
+    @id = id
+    @service_instance = service_instance
+  end
 
   def host
     connection_config.fetch('host')
@@ -71,8 +75,8 @@ class ServiceBinding
     connection_config.fetch('port')
   end
 
-  def database
-    service_instance.database
+  def keyspace
+    @service_instance.getKeyspaceName
   end
 
   def username
@@ -84,28 +88,12 @@ class ServiceBinding
   end
 
   def save
-    connection.execute("CREATE USER '#{username}' IDENTIFIED BY '#{password}'")
-    connection.execute("GRANT ALL PRIVILEGES ON `#{database}`.* TO '#{username}'@'%'")
-
-    # Some MySQL installations, e.g., Travis, seem to need privileges
-    # to be flushed even when using the appropriate account management
-    # statements, despite what the MySQL documentation says:
-    # http://dev.mysql.com/doc/refman/5.6/en/privilege-changes.html
-    connection.execute('FLUSH PRIVILEGES')
+    @service_instance.client.execute("create user '#{username}' with password '#{password}' ")
+    @service_instance.client.execute("GRANT ALL PERMISSIONS ON KEYSPACE #{keyspace} TO #{username}")
   end
 
   def destroy
-    begin
-      connection.execute("DROP USER '#{username}'")
-    rescue ActiveRecord::StatementInvalid => e
-      raise unless e.message =~ /DROP USER failed/
-    else
-      # Some MySQL installations, e.g., Travis, seem to need privileges
-      # to be flushed even when using the appropriate account management
-      # statements, despite what the MySQL documentation says:
-      # http://dev.mysql.com/doc/refman/5.6/en/privilege-changes.html
-      connection.execute('FLUSH PRIVILEGES')
-    end
+    @service_instance.client.execute("DROP USER #{username}")
   end
 
   def to_json(*)
@@ -113,11 +101,9 @@ class ServiceBinding
       'credentials' => {
         'hostname' => host,
         'port' => port,
-        'name' => database,
+        'name' => keyspace,
         'username' => username,
-        'password' => password,
-        'uri' => uri,
-        'jdbcUrl' => jdbc_url
+        'password' => password
       }
     }.to_json
   end
@@ -128,11 +114,4 @@ class ServiceBinding
     Rails.configuration.database_configuration[Rails.env]
   end
 
-  def uri
-    "mysql://#{username}:#{password}@#{host}:#{port}/#{database}?reconnect=true"
-  end
-
-  def jdbc_url
-    "jdbc:mysql://#{username}:#{password}@#{host}:#{port}/#{database}"
-  end
 end

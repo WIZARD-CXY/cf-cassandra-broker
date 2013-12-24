@@ -426,3 +426,233 @@ Started DELETE "/v2/service_instances/a640eac0-13e9-4fd8-9ecf-e305418c7d5b?plan_
 Processing by V2::ServiceInstancesController#destroy as JSON
   Parameters: {"plan_id"=>"2451fa22-df16-4c10-ba6e-1f682d3dcdc8", "service_id"=>"3101b971-1045-4816-a7ac-9ded2e028076", "id"=>"a640eac0-13e9-4fd8-9ecf-e305418c7d5b"}
 Completed 200 OK in 861ms (Views: 0.2ms)
+
+
+Started PUT "/v2/service_instances/c20b8dbb-84ff-427d-af83-af388aa4e8e7" for 10.10.102.224 at 2013-12-24 10:04:26 +0800
+Processing by V2::ServiceInstancesController#update as JSON
+  Parameters: {"service_id"=>"3101b971-1045-4816-a7ac-9ded2e028076", "plan_id"=>"2451fa22-df16-4c10-ba6e-1f682d3dcdc8", "organization_guid"=>"a3bf5487-d26d-44b8-84a8-87aef11acd9d", "space_guid"=>"7c191e91-40ba-4cce-ba6b-27c19939d6a4", "id"=>"c20b8dbb-84ff-427d-af83-af388aa4e8e7"}
+Completed 201 Created in 767ms (Views: 0.2ms)
+
+
+Started PUT "/v2/service_instances/c20b8dbb-84ff-427d-af83-af388aa4e8e7/service_bindings/151f0323-98ec-4b35-bf1e-19ba67299b9f" for 10.10.102.224 at 2013-12-24 10:05:47 +0800
+Processing by V2::ServiceBindingsController#update as JSON
+  Parameters: {"plan_id"=>"2451fa22-df16-4c10-ba6e-1f682d3dcdc8", "service_id"=>"3101b971-1045-4816-a7ac-9ded2e028076", "service_instance_id"=>"c20b8dbb-84ff-427d-af83-af388aa4e8e7", "id"=>"151f0323-98ec-4b35-bf1e-19ba67299b9f"}
+Completed 500 Internal Server Error in 559ms
+
+ArgumentError (wrong number of arguments(1 for 0)):
+  app/controllers/v2/service_bindings_controller.rb:4:in `initialize'
+  app/controllers/v2/service_bindings_controller.rb:4:in `new'
+  app/controllers/v2/service_bindings_controller.rb:4:in `update'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.2ms)
+
+
+Started PUT "/v2/service_instances/c20b8dbb-84ff-427d-af83-af388aa4e8e7/service_bindings/37d133cc-3881-412a-b4b7-66776d27886f" for 10.10.102.224 at 2013-12-24 10:10:35 +0800
+Processing by V2::ServiceBindingsController#update as JSON
+  Parameters: {"plan_id"=>"2451fa22-df16-4c10-ba6e-1f682d3dcdc8", "service_id"=>"3101b971-1045-4816-a7ac-9ded2e028076", "service_instance_id"=>"c20b8dbb-84ff-427d-af83-af388aa4e8e7", "id"=>"37d133cc-3881-412a-b4b7-66776d27886f"}
+Completed 500 Internal Server Error in 616ms
+
+ArgumentError (wrong number of arguments (1 for 2)):
+  app/models/service_binding.rb:65:in `initialize'
+  app/controllers/v2/service_bindings_controller.rb:4:in `new'
+  app/controllers/v2/service_bindings_controller.rb:4:in `update'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.8ms)
+
+
+Started PUT "/v2/service_instances/c20b8dbb-84ff-427d-af83-af388aa4e8e7/service_bindings/85232868-0f47-46ce-8a1d-f02f104857a8" for 10.10.102.224 at 2013-12-24 10:12:17 +0800
+Processing by V2::ServiceBindingsController#update as JSON
+  Parameters: {"plan_id"=>"2451fa22-df16-4c10-ba6e-1f682d3dcdc8", "service_id"=>"3101b971-1045-4816-a7ac-9ded2e028076", "service_instance_id"=>"c20b8dbb-84ff-427d-af83-af388aa4e8e7", "id"=>"85232868-0f47-46ce-8a1d-f02f104857a8"}
+Completed 500 Internal Server Error in 620ms
+
+ArgumentError (wrong number of arguments (1 for 2)):
+  app/models/service_binding.rb:65:in `initialize'
+  app/controllers/v2/service_bindings_controller.rb:4:in `new'
+  app/controllers/v2/service_bindings_controller.rb:4:in `update'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.2ms)
+
+
+Started PUT "/v2/service_instances/c20b8dbb-84ff-427d-af83-af388aa4e8e7/service_bindings/4426bb95-7890-4e91-baee-08c6d116b4d7" for 10.10.102.224 at 2013-12-24 10:22:18 +0800
+Processing by V2::ServiceBindingsController#update as JSON
+  Parameters: {"plan_id"=>"2451fa22-df16-4c10-ba6e-1f682d3dcdc8", "service_id"=>"3101b971-1045-4816-a7ac-9ded2e028076", "service_instance_id"=>"c20b8dbb-84ff-427d-af83-af388aa4e8e7", "id"=>"4426bb95-7890-4e91-baee-08c6d116b4d7"}
+Completed 500 Internal Server Error in 619ms
+
+ArgumentError (wrong number of arguments (1 for 2)):
+  app/models/service_binding.rb:65:in `initialize'
+  app/controllers/v2/service_bindings_controller.rb:4:in `new'
+  app/controllers/v2/service_bindings_controller.rb:4:in `update'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.6ms)
+
+
+Started PUT "/v2/service_instances/c20b8dbb-84ff-427d-af83-af388aa4e8e7/service_bindings/0c1f3fea-e222-44d2-b7ea-8c0ba70b5a9c" for 10.10.102.224 at 2013-12-24 10:25:12 +0800
+Processing by V2::ServiceBindingsController#update as JSON
+  Parameters: {"plan_id"=>"2451fa22-df16-4c10-ba6e-1f682d3dcdc8", "service_id"=>"3101b971-1045-4816-a7ac-9ded2e028076", "service_instance_id"=>"c20b8dbb-84ff-427d-af83-af388aa4e8e7", "id"=>"0c1f3fea-e222-44d2-b7ea-8c0ba70b5a9c"}
+Completed 500 Internal Server Error in 634ms
+
+ArgumentError (wrong number of arguments (1 for 2)):
+  app/models/service_binding.rb:65:in `initialize'
+  app/controllers/v2/service_bindings_controller.rb:6:in `new'
+  app/controllers/v2/service_bindings_controller.rb:6:in `update'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.9ms)
+
+
+Started PUT "/v2/service_instances/c20b8dbb-84ff-427d-af83-af388aa4e8e7/service_bindings/1fc98cb2-99dc-4331-b839-abf144ee6619" for 10.10.102.224 at 2013-12-24 10:30:33 +0800
+Processing by V2::ServiceBindingsController#update as JSON
+  Parameters: {"plan_id"=>"2451fa22-df16-4c10-ba6e-1f682d3dcdc8", "service_id"=>"3101b971-1045-4816-a7ac-9ded2e028076", "service_instance_id"=>"c20b8dbb-84ff-427d-af83-af388aa4e8e7", "id"=>"1fc98cb2-99dc-4331-b839-abf144ee6619"}
+Completed 500 Internal Server Error in 666ms
+
+ArgumentError (wrong number of arguments (1 for 2)):
+  app/models/service_binding.rb:65:in `initialize'
+  app/controllers/v2/service_bindings_controller.rb:6:in `new'
+  app/controllers/v2/service_bindings_controller.rb:6:in `update'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.7ms)
+
+
+Started PUT "/v2/service_instances/c20b8dbb-84ff-427d-af83-af388aa4e8e7/service_bindings/c93e2964-0496-49ee-bb82-0b094704a8f6" for 10.10.102.224 at 2013-12-24 10:35:34 +0800
+Processing by V2::ServiceBindingsController#update as JSON
+  Parameters: {"plan_id"=>"2451fa22-df16-4c10-ba6e-1f682d3dcdc8", "service_id"=>"3101b971-1045-4816-a7ac-9ded2e028076", "service_instance_id"=>"c20b8dbb-84ff-427d-af83-af388aa4e8e7", "id"=>"c93e2964-0496-49ee-bb82-0b094704a8f6"}
+ c20b8dbb-84ff-427d-af83-af388aa4e8e7
+c93e2964-0496-49ee-bb82-0b094704a8f6
+Completed 500 Internal Server Error in 644ms
+
+ArgumentError (wrong number of arguments (1 for 2)):
+  app/models/service_binding.rb:65:in `initialize'
+  app/controllers/v2/service_bindings_controller.rb:6:in `new'
+  app/controllers/v2/service_bindings_controller.rb:6:in `update'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.4ms)
+
+
+Started PUT "/v2/service_instances/c20b8dbb-84ff-427d-af83-af388aa4e8e7/service_bindings/54f5261f-b025-4d9f-995d-262e97dfcfe0" for 10.10.102.224 at 2013-12-24 10:36:15 +0800
+Processing by V2::ServiceBindingsController#update as JSON
+  Parameters: {"plan_id"=>"2451fa22-df16-4c10-ba6e-1f682d3dcdc8", "service_id"=>"3101b971-1045-4816-a7ac-9ded2e028076", "service_instance_id"=>"c20b8dbb-84ff-427d-af83-af388aa4e8e7", "id"=>"54f5261f-b025-4d9f-995d-262e97dfcfe0"}
+service_instance_id IS  c20b8dbb-84ff-427d-af83-af388aa4e8e7
+ID IS 54f5261f-b025-4d9f-995d-262e97dfcfe0
+Completed 500 Internal Server Error in 621ms
+
+ArgumentError (wrong number of arguments (1 for 2)):
+  app/models/service_binding.rb:65:in `initialize'
+  app/controllers/v2/service_bindings_controller.rb:6:in `new'
+  app/controllers/v2/service_bindings_controller.rb:6:in `update'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.2ms)
+
+
+Started PUT "/v2/service_instances/c20b8dbb-84ff-427d-af83-af388aa4e8e7/service_bindings/93cade0e-0a6f-4927-8111-4e52bc3232c3" for 10.10.102.224 at 2013-12-24 10:38:21 +0800
+Processing by V2::ServiceBindingsController#update as JSON
+  Parameters: {"plan_id"=>"2451fa22-df16-4c10-ba6e-1f682d3dcdc8", "service_id"=>"3101b971-1045-4816-a7ac-9ded2e028076", "service_instance_id"=>"c20b8dbb-84ff-427d-af83-af388aa4e8e7", "id"=>"93cade0e-0a6f-4927-8111-4e52bc3232c3"}
+INSTANCE IS #<ServiceInstance:0x00000002d4b4b0 @id={:id=>"c20b8dbb-84ff-427d-af83-af388aa4e8e7"}, @client=#<Cql::Client::SynchronousClient:0x00000002df5b18 @async_client=#<Cql::Client::AsynchronousClient:0x00000002df6bd0 @logger=#<Cql::Client::NullLogger:0x00000002df6a40>, @io_reactor=#<Cql::Io::IoReactor @connections=[#<Cql::Io::Unblocker>, #<Cql::Io::Connection connected 10.10.102.24:9042>, #<Cql::Io::Connection connected 10.10.102.25:9042>]>, @hosts=["10.10.102.24"], @initial_keyspace=nil, @lock=#<Mutex:0x00000002df60e0>, @connected=true, @connecting=false, @closing=false, @request_runner=#<Cql::Client::RequestRunner:0x00000002df60b8>, @keyspace_changer=#<Cql::Client::KeyspaceChanger:0x00000002df6090 @request_runner=#<Cql::Client::RequestRunner:0x00000002df6018>>, @connection_manager=#<Cql::Client::ConnectionManager:0x00000002df5f00 @connections=[#<Cql::Protocol::CqlProtocolHandler:0x00000002e05360 @connection=#<Cql::Io::Connection connected 10.10.102.24:9042>, @scheduler=#<Cql::Io::IoReactor @connections=[#<Cql::Io::Unblocker>, #<Cql::Io::Connection connected 10.10.102.24:9042>, #<Cql::Io::Connection connected 10.10.102.25:9042>]>, @promises=[#<Cql::Protocol::CqlProtocolHandler::RequestPromise:0x000000038948f8 @request=REGISTER ["TOPOLOGY_CHANGE", "STATUS_CHANGE"], @timed_out=false, @future=#<Cql::CompletableFuture:0x00000003894538 @lock=#<Mutex:0x00000003894470>, @resolved=false, @failed=false, @failure_listeners=[#<Proc:0x000000038923f0@/usr/local/lib/ruby/gems/1.9.1/gems/cql-rb-1.1.2/lib/cql/future.rb:141>], @value_listeners=[#<Proc:0x000000038923c8@/usr/local/lib/ruby/gems/1.9.1/gems/cql-rb-1.1.2/lib/cql/future.rb:142>], @complete_listeners=[]>>, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil], @read_buffer=#<Cql::ByteBuffer: "">, @current_frame=#<Cql::Protocol::ResponseFrame:0x00000002e49538 @headers=#<Cql::Protocol::ResponseFrame::FrameHeaders:0x00000002e49470 @buffer=#<Cql::ByteBuffer: "">>>, @request_queue_in=[], @request_queue_out=[], @event_listeners=[#<Proc:0x00000002e88f08@/usr/local/lib/ruby/gems/1.9.1/gems/cql-rb-1.1.2/lib/cql/client/asynchronous_client.rb:172>], @data={:host_id=>e629d3b5-ca8d-4e80-b1c6-2596cac3071c, :data_center=>"datacenter1"}, @lock=#<Mutex:0x00000002e04ac8>, @closed_promise=#<Cql::Promise:0x00000002e04a50 @future=#<Cql::CompletableFuture:0x00000002e048e8 @lock=#<Mutex:0x00000002e045f0>, @resolved=false, @failed=false, @failure_listeners=[], @value_listeners=[], @complete_listeners=[#<Proc:0x00000002e37428@/usr/local/lib/ruby/gems/1.9.1/gems/cql-rb-1.1.2/lib/cql/client/connection_helper.rb:85>, #<Proc:0x00000003895640@/usr/local/lib/ruby/gems/1.9.1/gems/cql-rb-1.1.2/lib/cql/client/connection_manager.rb:18>, #<Proc:0x00000002e88fd0@/usr/local/lib/ruby/gems/1.9.1/gems/cql-rb-1.1.2/lib/cql/client/asynchronous_client.rb:163>]>>, @keyspace=nil>, #<Cql::Protocol::CqlProtocolHandler:0x00000002e43430 @connection=#<Cql::Io::Connection connected 10.10.102.25:9042>, @scheduler=#<Cql::Io::IoReactor @connections=[#<Cql::Io::Unblocker>, #<Cql::Io::Connection connected 10.10.102.24:9042>, #<Cql::Io::Connection connected 10.10.102.25:9042>]>, @promises=[nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil], @read_buffer=#<Cql::ByteBuffer: "">, @current_frame=#<Cql::Protocol::ResponseFrame:0x00000002e87248 @headers=#<Cql::Protocol::ResponseFrame::FrameHeaders:0x00000002e86d20 @buffer=#<Cql::ByteBuffer: "">>>, @request_queue_in=[], @request_queue_out=[], @event_listeners=[], @data={:host_id=>5a97cdb2-d9af-41b6-ab98-01cf6b5715c0, :data_center=>"datacenter1"}, @lock=#<Mutex:0x00000002e43048>, @closed_promise=#<Cql::Promise:0x00000002e43020 @future=#<Cql::CompletableFuture:0x00000002e42fd0 @lock=#<Mutex:0x00000002e42f80>, @resolved=false, @failed=false, @failure_listeners=[], @value_listeners=[], @complete_listeners=[#<Proc:0x00000002e4e948@/usr/local/lib/ruby/gems/1.9.1/gems/cql-rb-1.1.2/lib/cql/client/connection_helper.rb:85>, #<Proc:0x00000003894ec0@/usr/local/lib/ruby/gems/1.9.1/gems/cql-rb-1.1.2/lib/cql/client/connection_manager.rb:18>]>>, @keyspace=nil>], @lock=#<Mutex:0x00000002df5d70>>, @execute_options_decoder=#<Cql::Client::ExecuteOptionsDecoder:0x00000002df5cd0 @default_consistency=:quorum>, @connection_helper=#<Cql::Client::ConnectionHelper:0x00000002df5ca8 @io_reactor=#<Cql::Io::IoReactor @connections=[#<Cql::Io::Unblocker>, #<Cql::Io::Connection connected 10.10.102.24:9042>, #<Cql::Io::Connection connected 10.10.102.25:9042>]>, @port=9042, @credentials={"username"=>"Wiz", "password"=>"humanoid"}, @connections_per_node=1, @connection_timeout=10, @logger=#<Cql::Client::NullLogger:0x00000002df6a40>, @request_runner=#<Cql::Client::RequestRunner:0x00000002df5c08>, @keyspace_changer=#<Cql::Client::KeyspaceChanger:0x00000002df5be0 @request_runner=#<Cql::Client::RequestRunner:0x00000002df5b40>>>, @connected_future=#<Cql::CompletableFuture:0x00000002dfb950 @lock=#<Mutex:0x00000002dfb5e0>, @resolved=true, @failed=false, @failure_listeners=nil, @value_listeners=nil, @complete_listeners=nil, @value=#<Cql::Client::AsynchronousClient:0x00000002df6bd0 ...>>>>>
+Completed 500 Internal Server Error in 621ms
+
+ArgumentError (wrong number of arguments (1 for 2)):
+  app/models/service_binding.rb:65:in `initialize'
+  app/controllers/v2/service_bindings_controller.rb:7:in `new'
+  app/controllers/v2/service_bindings_controller.rb:7:in `update'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.0ms)
+
+
+Started PUT "/v2/service_instances/c20b8dbb-84ff-427d-af83-af388aa4e8e7/service_bindings/92dad045-9ee8-4b06-ac88-299c681571dc" for 10.10.102.224 at 2013-12-24 10:41:18 +0800
+Processing by V2::ServiceBindingsController#update as JSON
+  Parameters: {"plan_id"=>"2451fa22-df16-4c10-ba6e-1f682d3dcdc8", "service_id"=>"3101b971-1045-4816-a7ac-9ded2e028076", "service_instance_id"=>"c20b8dbb-84ff-427d-af83-af388aa4e8e7", "id"=>"92dad045-9ee8-4b06-ac88-299c681571dc"}
+Completed 500 Internal Server Error in 621ms
+
+Cql::QueryError (line 1:43 mismatched input 'p405MP72UObqYYjp' expecting STRING_LITERAL):
+  app/models/service_binding.rb:91:in `save'
+  app/controllers/v2/service_bindings_controller.rb:8:in `update'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.2ms)
+
+
+Started PUT "/v2/service_instances/c20b8dbb-84ff-427d-af83-af388aa4e8e7/service_bindings/184ca68b-48c9-48da-8ccd-93540d82dbe2" for 10.10.102.224 at 2013-12-24 10:43:14 +0800
+Processing by V2::ServiceBindingsController#update as JSON
+  Parameters: {"plan_id"=>"2451fa22-df16-4c10-ba6e-1f682d3dcdc8", "service_id"=>"3101b971-1045-4816-a7ac-9ded2e028076", "service_instance_id"=>"c20b8dbb-84ff-427d-af83-af388aa4e8e7", "id"=>"184ca68b-48c9-48da-8ccd-93540d82dbe2"}
+Completed 201 Created in 894ms (Views: 2.1ms)
+
+
+Started DELETE "/v2/service_instances/c20b8dbb-84ff-427d-af83-af388aa4e8e7/service_bindings/184ca68b-48c9-48da-8ccd-93540d82dbe2?plan_id=2451fa22-df16-4c10-ba6e-1f682d3dcdc8&service_id=3101b971-1045-4816-a7ac-9ded2e028076" for 10.10.102.224 at 2013-12-24 10:44:23 +0800
+Processing by V2::ServiceBindingsController#destroy as JSON
+  Parameters: {"plan_id"=>"2451fa22-df16-4c10-ba6e-1f682d3dcdc8", "service_id"=>"3101b971-1045-4816-a7ac-9ded2e028076", "service_instance_id"=>"c20b8dbb-84ff-427d-af83-af388aa4e8e7", "id"=>"184ca68b-48c9-48da-8ccd-93540d82dbe2"}
+Completed 500 Internal Server Error in 0ms
+
+ArgumentError (wrong number of arguments (1 for 2)):
+  app/models/service_binding.rb:14:in `find_by_id'
+  app/controllers/v2/service_bindings_controller.rb:14:in `destroy'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.8ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.3ms)
+
+
+Started DELETE "/v2/service_instances/c20b8dbb-84ff-427d-af83-af388aa4e8e7/service_bindings/184ca68b-48c9-48da-8ccd-93540d82dbe2?plan_id=2451fa22-df16-4c10-ba6e-1f682d3dcdc8&service_id=3101b971-1045-4816-a7ac-9ded2e028076" for 10.10.102.224 at 2013-12-24 10:45:15 +0800
+Processing by V2::ServiceBindingsController#destroy as JSON
+  Parameters: {"plan_id"=>"2451fa22-df16-4c10-ba6e-1f682d3dcdc8", "service_id"=>"3101b971-1045-4816-a7ac-9ded2e028076", "service_instance_id"=>"c20b8dbb-84ff-427d-af83-af388aa4e8e7", "id"=>"184ca68b-48c9-48da-8ccd-93540d82dbe2"}
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (wrong number of arguments (1 for 2)):
+  app/models/service_binding.rb:14:in `find_by_id'
+  app/controllers/v2/service_bindings_controller.rb:14:in `destroy'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.8ms)
+
+
+Started DELETE "/v2/service_instances/c20b8dbb-84ff-427d-af83-af388aa4e8e7/service_bindings/184ca68b-48c9-48da-8ccd-93540d82dbe2?plan_id=2451fa22-df16-4c10-ba6e-1f682d3dcdc8&service_id=3101b971-1045-4816-a7ac-9ded2e028076" for 10.10.102.224 at 2013-12-24 10:46:32 +0800
+Processing by V2::ServiceBindingsController#destroy as JSON
+  Parameters: {"plan_id"=>"2451fa22-df16-4c10-ba6e-1f682d3dcdc8", "service_id"=>"3101b971-1045-4816-a7ac-9ded2e028076", "service_instance_id"=>"c20b8dbb-84ff-427d-af83-af388aa4e8e7", "id"=>"184ca68b-48c9-48da-8ccd-93540d82dbe2"}
+Completed 204 No Content in 632ms (Views: 0.2ms)
+
+
+Started DELETE "/v2/service_instances/c20b8dbb-84ff-427d-af83-af388aa4e8e7?plan_id=2451fa22-df16-4c10-ba6e-1f682d3dcdc8&service_id=3101b971-1045-4816-a7ac-9ded2e028076" for 10.10.102.224 at 2013-12-24 10:48:11 +0800
+Processing by V2::ServiceInstancesController#destroy as JSON
+  Parameters: {"plan_id"=>"2451fa22-df16-4c10-ba6e-1f682d3dcdc8", "service_id"=>"3101b971-1045-4816-a7ac-9ded2e028076", "id"=>"c20b8dbb-84ff-427d-af83-af388aa4e8e7"}
+Completed 200 OK in 695ms (Views: 0.2ms)

@@ -35,7 +35,7 @@ class ServiceInstance
   #  connection.select("select count(*) from information_schema.SCHEMATA where schema_name LIKE 'cf_%'").rows.first.first
   #end
 
-  def keyspaceName
+  def getKeyspaceName
       if id =~ /[^0-9,a-z,A-Z$-]+/
         raise 'Only ids matching [0-9,a-z,A-Z$-]+ are allowed'
       end
@@ -47,11 +47,11 @@ class ServiceInstance
 
   # now is hard coded replication strategy
   def save
-    @client.execute("CREATE KEYSPACE #{keyspaceName} WITH replication = {'class': 'SimpleStrategy','replication_factor': 3}")
+    @client.execute("CREATE KEYSPACE #{getKeyspaceName} WITH replication = {'class': 'SimpleStrategy','replication_factor': 3}")
   end
 
   def destroy
-    @client.execute("DROP KEYSPACE #{keyspaceName}")
+    @client.execute("DROP KEYSPACE #{getKeyspaceName}")
   end
 
   def to_json(*)
