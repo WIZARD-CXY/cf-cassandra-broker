@@ -1,0 +1,95 @@
+Processing by V2::CatalogsController#show as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 0ms
+Processing by V2::CatalogsController#show as HTML
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by V2::CatalogsController#show as HTML
+Completed 200 OK in 0ms (Views: 0.1ms)
+Processing by V2::CatalogsController#show as HTML
+Completed 200 OK in 0ms (Views: 0.1ms)
+Processing by V2::CatalogsController#show as HTML
+Completed 200 OK in 0ms (Views: 0.1ms)
+Processing by V2::CatalogsController#show as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 0ms
+Processing by V2::ServiceInstancesController#update as HTML
+  Parameters: {"id"=>"88f6fa22-c8b7-4cdc-be3a-dc09ea7734db"}
+Completed 201 Created in 837ms (Views: 0.2ms)
+Processing by V2::ServiceInstancesController#destroy as HTML
+  Parameters: {"id"=>"88f6fa22-c8b7-4cdc-be3a-dc09ea7734db"}
+Completed 500 Internal Server Error in 557ms
+Processing by V2::ServiceBindingsController#update as HTML
+  Parameters: {"id"=>"123", "service_instance_id"=>"instance-1"}
+Completed 201 Created in 866ms (Views: 2.2ms)
+Processing by V2::ServiceBindingsController#update as HTML
+  Parameters: {"id"=>"123", "service_instance_id"=>"instance-1"}
+Completed 500 Internal Server Error in 619ms
+Started DELETE "/v2/service_instances/DOESNOTEXIST" for 127.0.0.1 at 2014-03-06 15:41:52 +0800
+Processing by V2::ServiceInstancesController#destroy as HTML
+  Parameters: {"id"=>"DOESNOTEXIST"}
+Completed 500 Internal Server Error in 569ms
+Started DELETE "/v2/service_instances/service_instance_id/service_bindings/DOESNOTEXIST" for 127.0.0.1 at 2014-03-06 15:41:52 +0800
+Processing by V2::ServiceBindingsController#destroy as HTML
+  Parameters: {"service_instance_id"=>"service_instance_id", "id"=>"DOESNOTEXIST"}
+Completed 500 Internal Server Error in 556ms
+Processing by V2::ServiceInstancesController#update as HTML
+  Parameters: {"id"=>"88f6fa22-c8b7-4cdc-be3a-dc09ea7734db"}
+Completed 201 Created in 618ms (Views: 0.2ms)
+Processing by V2::ServiceInstancesController#destroy as HTML
+  Parameters: {"id"=>"88f6fa22-c8b7-4cdc-be3a-dc09ea7734db"}
+Completed 500 Internal Server Error in 554ms
+Processing by V2::CatalogsController#show as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 4ms
+Processing by V2::CatalogsController#show as HTML
+Completed 200 OK in 0ms (Views: 0.2ms)
+Processing by V2::CatalogsController#show as HTML
+Completed 200 OK in 0ms (Views: 0.1ms)
+Started GET "/v2/catalog" for 127.0.0.1 at 2014-03-06 15:42:04 +0800
+Processing by V2::CatalogsController#show as HTML
+Completed 200 OK in 1ms (Views: 0.4ms)
+Started GET "/v2/catalog" for 127.0.0.1 at 2014-03-06 15:50:45 +0800
+Processing by V2::CatalogsController#show as HTML
+Completed 200 OK in 2ms (Views: 0.4ms)
+Started GET "/v2/catalog" for 127.0.0.1 at 2014-03-06 15:51:13 +0800
+Processing by V2::CatalogsController#show as HTML
+Completed 200 OK in 2ms (Views: 0.5ms)
+Started GET "/v2/catalog" for 127.0.0.1 at 2014-03-06 15:51:36 +0800
+Processing by V2::CatalogsController#show as HTML
+Completed 200 OK in 2ms (Views: 0.5ms)
+Started GET "/v2/catalog" for 127.0.0.1 at 2014-03-06 15:53:29 +0800
+Processing by V2::CatalogsController#show as HTML
+Completed 200 OK in 2ms (Views: 0.5ms)
+Started GET "/v2/catalog" for 127.0.0.1 at 2014-03-06 15:54:20 +0800
+Processing by V2::CatalogsController#show as HTML
+Completed 200 OK in 2ms (Views: 0.4ms)
+Started GET "/v2/catalog" for 127.0.0.1 at 2014-03-06 15:55:31 +0800
+Processing by V2::CatalogsController#show as HTML
+Completed 200 OK in 2ms (Views: 0.4ms)
+Processing by V2::CatalogsController#show as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 0ms
+Processing by V2::CatalogsController#show as HTML
+Completed 200 OK in 0ms (Views: 0.2ms)
+Processing by V2::CatalogsController#show as HTML
+Completed 200 OK in 0ms (Views: 0.1ms)
+Processing by V2::ServiceInstancesController#update as HTML
+  Parameters: {"id"=>"88f6fa22-c8b7-4cdc-be3a-dc09ea7734db"}
+Completed 201 Created in 633ms (Views: 0.2ms)
+Processing by V2::ServiceInstancesController#destroy as HTML
+  Parameters: {"id"=>"88f6fa22-c8b7-4cdc-be3a-dc09ea7734db"}
+Completed 500 Internal Server Error in 556ms
+Started GET "/v2/catalog" for 127.0.0.1 at 2014-03-06 15:56:51 +0800
+Processing by V2::CatalogsController#show as HTML
+Completed 200 OK in 1ms (Views: 0.5ms)
+Started DELETE "/v2/service_instances/DOESNOTEXIST" for 127.0.0.1 at 2014-03-06 15:56:51 +0800
+Processing by V2::ServiceInstancesController#destroy as HTML
+  Parameters: {"id"=>"DOESNOTEXIST"}
+Completed 500 Internal Server Error in 570ms
+Started DELETE "/v2/service_instances/service_instance_id/service_bindings/DOESNOTEXIST" for 127.0.0.1 at 2014-03-06 15:56:52 +0800
+Processing by V2::ServiceBindingsController#destroy as HTML
+  Parameters: {"service_instance_id"=>"service_instance_id", "id"=>"DOESNOTEXIST"}
+Completed 500 Internal Server Error in 547ms
+Processing by V2::ServiceBindingsController#update as HTML
+  Parameters: {"id"=>"123", "service_instance_id"=>"instance-1"}
+Completed 500 Internal Server Error in 566ms

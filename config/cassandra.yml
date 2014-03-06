@@ -17,4 +17,3 @@ test:
   password: humanoid
   host: "10.10.102.24"
   port: 9160
-

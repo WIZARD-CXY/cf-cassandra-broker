@@ -1,7 +1,7 @@
 class V2::ServiceInstancesController < V2::BaseController
   # Now is free plan
   def update
-    #quota = Settings['services'][0]['max_db_per_node']
+    #quota = Settings['services'][0]['max_keyspace_per_node']
     #existing_instances = ServiceInstance.get_number_of_existing_instances
 
     #if !quota or existing_instances < quota

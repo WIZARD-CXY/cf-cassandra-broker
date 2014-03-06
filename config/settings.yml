@@ -10,11 +10,11 @@ defaults: &defaults
   services:
   - name: cassandra-service
     id: 3101b971-1045-4816-a7ac-9ded2e028076
-    description: cassandra service for couldfoundry v2
+    description: cassandra service for cloudfoundry v2
     tags:
       - cassandra
       - NoSQL
-    max_db_per_node: 200
+    max_keyspace_per_node: 200
     metadata:
       provider:
         name: chenxingyu
